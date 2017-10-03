@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hernandomacias.be_part.Principal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:id="@+id/linearLayout">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@drawable/iconNoticias" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@drawable/iconEventos" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@drawable/iconNotifi" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@drawable/iconMensajes" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@drawable/iconbuscar" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@drawable/iconPerfil" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@drawable/iconConf" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="383dp"
+        android:layout_height="510dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="383dp"
+            android:layout_height="100dp"
+            android:layout_alignTop="@+id/publicacion"
+            android:layout_alignParentStart="true">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="61dp"
+                app:srcCompat="@mipmap/ic_launcher" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/evento"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:text="Evento"
+            android:textSize="12sp"
+            android:layout_above="@+id/surfaceView"
+            android:layout_alignStart="@+id/publicacion" />
+
+        <Button
+            android:id="@+id/publicacion"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="122dp"
+            android:layout_marginTop="63dp"
+            android:text="Publicación"
+            android:textSize="12sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+
+        <SurfaceView
+            android:id="@+id/surfaceView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/relativeLayout" />
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

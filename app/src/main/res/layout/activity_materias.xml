@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hernandomacias.be_part.Materias">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:id="@+id/linearLayout"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="0dp">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@drawable/iconNoticias" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@drawable/iconEventos" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@drawable/iconNotifi" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@drawable/iconMensajes" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@drawable/iconbuscar" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@drawable/iconPerfil" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@drawable/iconConf" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nota"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="215dp"
+        tools:layout_editor_absoluteY="84dp" />
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre materia"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="84dp" />
+
+    <EditText
+        android:id="@+id/editText24"
+        android:layout_width="80dp"
+        android:layout_height="38dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="Nota"
+        tools:layout_editor_absoluteX="215dp"
+        tools:layout_editor_absoluteY="123dp" />
+
+    <ExpandableListView
+        android:layout_width="164dp"
+        android:layout_height="30dp"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="132dp" />
+
+    <Button
+        android:id="@+id/button16"
+        android:layout_width="88dp"
+        android:layout_height="48dp"
+        android:text="+"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="317dp"
+        tools:layout_editor_absoluteY="121dp" />
+
+    <TableLayout
+        android:layout_width="332dp"
+        android:layout_height="278dp"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="197dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </TableLayout>
+
+</android.support.constraint.ConstraintLayout>
