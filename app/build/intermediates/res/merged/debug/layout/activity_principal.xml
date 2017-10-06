@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hernandomacias.be_part.Principal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:id="@+id/linearLayout"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@drawable/iconnoticias"
+            android:onClick="Inicio()" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@drawable/iconeventos"
+            android:onClick="Evento()" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@drawable/iconnotifi" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@drawable/iconmensajes"
+            android:onClick="Msj()" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@drawable/iconbuscar" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@drawable/iconperfil"
+            android:onClick="Perfil()" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@drawable/iconconf" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="383dp"
+        android:layout_height="510dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="383dp"
+            android:layout_height="100dp"
+            android:layout_alignTop="@+id/publicacion"
+            android:layout_alignParentStart="true">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="61dp"
+                app:srcCompat="@mipmap/ic_launcher" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/evento"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:layout_above="@+id/surfaceView"
+            android:layout_alignStart="@+id/publicacion"
+            android:onClick="Evento()"
+            android:text="Evento"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/publicacion"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="122dp"
+            android:layout_marginTop="63dp"
+            android:onClick="Perfil()"
+            android:text="Publicación"
+            android:textSize="12sp" />
+
+        <SurfaceView
+            android:id="@+id/surfaceView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/relativeLayout" />
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>
