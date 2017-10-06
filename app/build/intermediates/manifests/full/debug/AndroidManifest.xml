@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hernandomacias.be_part"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="18"
+        android:targetSdkVersion="26" />
+
+    <meta-data
+        android:name="android.support.VERSION"
+        android:value="26.0.0-alpha1" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity android:name="com.example.hernandomacias.be_part.Principal" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.hernandomacias.be_part.Perfil" />
+        <activity android:name="com.example.hernandomacias.be_part.Evento" />
+        <activity android:name="com.example.hernandomacias.be_part.Mensajes" />
+        <activity android:name="com.example.hernandomacias.be_part.Informacion" />
+        <activity android:name="com.example.hernandomacias.be_part.NuevoEvento" />
+        <activity android:name="com.example.hernandomacias.be_part.Login" />
+        <activity android:name="com.example.hernandomacias.be_part.Registro" />
+        <activity android:name="com.example.hernandomacias.be_part.Horario" />
+        <activity android:name="com.example.hernandomacias.be_part.Materias" />
+        <activity android:name="com.example.hernandomacias.be_part.IngresarMateria" />
+        <activity android:name="com.example.hernandomacias.be_part.Chats" />
+    </application>
+
+</manifest>
